@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
 
   const identityEmails = {
     Noxxorp: process.env.NOXXORP_EMAIL || "noxxlab214@gmail.com",
-    Rambo: process.env.RAMBO_EMAIL || "nisharg214@gmail.com",
+    Rambo: process.env.RAMBO_EMAIL || "vrund039@gmail.com",
     Rudy: process.env.RUDY_EMAIL || "rudradhirendrapatel@gmail.com",
   };
 
