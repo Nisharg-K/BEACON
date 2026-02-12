@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
   const htmlContent = `
     <div style="background-color: #0f0c29; color: #00d2ff; padding: 30px; border: 2px solid #00d2ff; border-radius: 15px; text-align: center; font-family: 'Segoe UI', Arial, sans-serif;">
       <h1 style="margin: 0; text-shadow: 0 0 10px #00d2ff;">SUMMON ALERT</h1>
-      <p style="color: white; font-size: 1.1rem;"><strong>${selectedIdentity}</strong> has summoned you.</p>
+      <p style="color: white; font-size: 1.1rem;"><strong>${selectedIdentity}</strong> has summoned you for BGMI</p>
       <div style="margin: 20px 0; border-top: 1px dashed #00d2ff;"></div>
       <p style="font-weight: bold; letter-spacing: 2px;">ENTER THE LOBBY NOW</p>
     </div>
