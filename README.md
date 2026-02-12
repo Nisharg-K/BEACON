@@ -1,12 +1,10 @@
 # BEACON
 
-A cinematic one-tap summon tool for squad coordination.
+An Over-Dramatic one-tap summon button for your homies.
 
-Beacon is a lightweight web app that lets a selected identity (`Noxxorp`, `Rambo`, or `Rudy`) trigger an email alert to the other two players using a Vercel Serverless Function and Nodemailer.
+
 
 ## Highlights
-- Fast single-page UI with identity lock + local persistence
-- Animated "Launch Beacon" action state and live status feedback
 - Serverless email API (`/api/send_mail`) for summon broadcasts
 - Simple Vercel-friendly structure (static frontend + API route)
 
@@ -26,7 +24,7 @@ Beacon is a lightweight web app that lets a selected identity (`Noxxorp`, `Rambo
 ```
 
 ## How It Works
-1. User selects an identity in the frontend modal.
+1. Save your homies email addresses in .env file 
 2. Identity is stored in `localStorage` (`beacon_identity`).
 3. Clicking **Launch Beacon** sends `POST /api/send_mail` with `{ identity }`.
 4. API validates identity and sends an email to the other two squad members.
@@ -37,9 +35,6 @@ Create a `.env` file (or configure in Vercel project settings):
 ```bash
 EMAIL_USER=your_gmail_address@gmail.com
 EMAIL_PASS=your_gmail_app_password
-NOXXORP_EMAIL=noxxlab214@gmail.com
-RAMBO_EMAIL=vrund039@gmail.com
-RUDY_EMAIL=rudradhirendrapatel@gmail.com
 ```
 
 Notes:
@@ -67,10 +62,6 @@ Request body:
 { "identity": "Noxxorp" }
 ```
 
-Valid identities:
-- `Noxxorp`
-- `Rambo`
-- `Rudy`
 
 Success response:
 ```json
